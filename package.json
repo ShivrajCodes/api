@@ -4,17 +4,16 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "build": "react-scripts build"
+    "build": "node build.js"
   },
-  "config":{
-          "distDir":"build"
-        },
   "dependencies": {
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "fast-speedtest-api": "^0.3.2",
-    "ping": "^0.4.0",
-    "react-scripts": "^5.0.1"
+    "ping": "^0.4.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.0"
   }
 }
