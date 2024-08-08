@@ -42,7 +42,7 @@ app.get('/api/speedtest', async (req, res) => {
 
 const simulateUploadSpeed = async (speedtest) => {
   let totalSpeed = 0;
-  const attempts = 1;
+  const attempts = 2;
 
   for (let i = 0; i < attempts; i++) {
     const speed = await speedtest.getSpeed();
